@@ -1,5 +1,6 @@
 const binominal = (n,m) => {
     try {
+        let b;
         let b_over;
         let b_under;
         let b_under2;
@@ -16,7 +17,7 @@ const binominal = (n,m) => {
                     b_under2*=j;
                 }   
             }
-            let b = b_over;
+            b = b_over;
             b/=b_under;
             b/=b_under2;
             return b;
@@ -28,7 +29,7 @@ const binominal = (n,m) => {
     }
 }
 
-console.log(binominal(7,3));
+console.log(binominal(4,3));
 
 const polynomial = (n,m,x) => {
     let i;
@@ -74,11 +75,11 @@ const Z = (n,m,x,y) => {
 }
 
 const Main = () => {
-    let x=[0.,1.,2.,3.,4];
+    let x=[0.,1.,2.,3.,4.];
     let y=[0.00,0.06,0.20,0.60,0.90];
     let c=[];
     let i;
-    let n=x.length/(x.length-1);
+    let n=x.length-1;
     console.log("orthogonal polynomial example\n");
     for(i=0;i<=2;i++){
         c[i]=Z(n,i,x,y)/Q(n,i,x);
