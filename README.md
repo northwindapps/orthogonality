@@ -1,4 +1,4 @@
 # orthogonality 
 cmd to start: node .\orthogonality.js
-# Reference
+# Referenced sources:
 https://www.amazon.com/dp/B01LDUK032
